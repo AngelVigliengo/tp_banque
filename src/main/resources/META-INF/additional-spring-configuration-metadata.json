@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "logging.leve.org.thymeleaf",
+  "type": "java.lang.String",
+  "description": "A description for 'logging.leve.org.thymeleaf'"
+}]}

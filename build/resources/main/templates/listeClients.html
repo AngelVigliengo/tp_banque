@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>clients liste</title>
+	</head>
+	<style>
+	table, p, h1, li {
+	    font-family: arial, sans-serif;
+	    border-collapse: collapse;
+	    width: 100%;
+	}
+	
+	td, th {
+	    border: 1px solid #dddddd;
+	    text-align: left;
+	    padding: 8px;
+	}
+	tr:nth-child(even) {
+	    background-color: #dddddd;
+	}
+	</style>
+	<body>
+<div>
+    <h1>Liste des clients</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>nom</th>
+            <th>prénom</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr data-th-each="client : ${clients}">
+            <td data-th-text="${client.nom}"></td>
+            <td data-th-text="${client.prenom}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
